@@ -1,20 +1,17 @@
 {
   "inbounds": [{
     "port": 8080,
-    "protocol": "vless",
+    "protocol": "vmess",
     "settings": {
       "clients": [{
-        "id": "24b4b1e1-7a89-45f6-858c-242cf53b5bdb"
-      }],
-      "decryption": "none"  // این خط رو اضافه کن!
+        "id": "24b4b1e1-7a89-45f6-858c-242cf53b5bdb",
+        "alterId": 0
+      }]
     },
     "streamSettings": {
       "network": "ws",
       "wsSettings": {
-        "path": "/",
-        "headers": {
-          "Host": "divine-shape-0363.aliwebwork0.workers.dev"
-        }
+        "path": "/24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vmess"
       }
     }
   }],
